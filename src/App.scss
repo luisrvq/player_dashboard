@@ -1,8 +1,37 @@
-@use './components/Header/header';
-@use './components/Info/info';
-@use './content/UIShell/UIShell';
-@use './content/LandingPage/landing-page';
+// Filter row — team + position dropdowns side by side
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 
-.app .cds--content {
-  margin-top: 3rem;
+  // Each Carbon Select fills its cell equally
+  > .cds--select {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+// Shared page wrapper
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  // Formation page: centre everything
+  &--formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+// Formation board wrapper — holds the 3-D perspective context
+.formation-board-wrap {
+  margin-top: 1.5rem;
+  perspective: 900px;
 }

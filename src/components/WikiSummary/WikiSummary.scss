@@ -1,0 +1,31 @@
+.wiki-summary {
+  margin-top: 1rem;
+  max-width: 360px;
+
+  &__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--cds-text-secondary, #525252);
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+  }
+
+  &__source {
+    font-size: 0.75rem;
+    color: var(--cds-text-secondary, #525252);
+  }
+
+  &__loading,
+  &__error {
+    font-size: 0.875rem;
+    color: var(--cds-text-secondary, #525252);
+    padding: 0.5rem 0;
+  }
+}
